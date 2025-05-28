@@ -1,0 +1,22 @@
+.container {
+
+    background-image: url("https://i.postimg.cc/XNc973GP/descarga.jpg");
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+
+@keyframes in {
+    0% {
+        margin-left: 10%;
+    
+    }
+
+    100% {
+        margin-left: 0;
+    }
+
+}

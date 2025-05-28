@@ -1,0 +1,182 @@
+[
+    {
+        "id": 21,
+        "name":"Rick Sanchez",
+        "image":"https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+        "gender":"Male",
+        "species":"Human",
+        "status":"Alive"
+    
+    },
+    {
+        "id": 22,
+        "name":"Morty Smith",
+        "image":"https://rickandmortyapi.com/api/character/avatar/2.jpeg",
+        "gender":"Male",
+        "species":"Human",
+        "status":"Alive"
+    
+    },
+    {
+        "id": 23,
+        "name":"Summer Smith",
+        "image":"https://rickandmortyapi.com/api/character/avatar/3.jpeg",
+        "gender":"Female",
+        "species":"Human",
+        "status":"Alive"
+    
+    },
+    {
+        "id": 24,
+        "name":"Beth Smith",
+        "image":"https://rickandmortyapi.com/api/character/avatar/4.jpeg",
+        "gender":"Female",
+        "species":"Human",
+        "status":"Alive"
+    
+    },
+    {
+        "id": 25,
+        "name":"Jerry Smith",
+        "image":"https://rickandmortyapi.com/api/character/avatar/5.jpeg",
+        "gender":"Male",
+        "species":"Human",
+        "status":"Alive"
+    
+    },
+    {
+        "id": 26,
+        "name":"Abadango Cluster Princess",
+        "image":"https://rickandmortyapi.com/api/character/avatar/6.jpeg",
+        "gender":"Female",
+        "species":"Alien",
+        "status":"Alive"
+    
+    },
+    {
+        "id": 27,
+        "name":"Abradolf Lincler",
+        "image":"https://rickandmortyapi.com/api/character/avatar/7.jpeg",
+        "gender":"Male",
+        "species":"Human",
+        "status":"unknown"
+    
+    },
+    {
+        "id": 28,
+        "name":"Adjudicator Rick",
+        "image":"https://rickandmortyapi.com/api/character/avatar/8.jpeg",
+        "gender":"Male",
+        "species":"Human",
+        "status":"Dead"
+    
+    },
+    {
+        "id": 29,
+        "name":"Agency Director",
+        "image":"https://rickandmortyapi.com/api/character/avatar/9.jpeg",
+        "gender":"Male",
+        "species":"Human",
+        "status":"Dead"
+    
+    },
+    {
+        "id": 30,
+        "name":"Alan Rails",
+        "image":"https://rickandmortyapi.com/api/character/avatar/10.jpeg",
+        "gender":"Male",
+        "species":"Human",
+        "status":"Dead"
+    
+    },
+    {
+        "id": 31,
+        "name":"Albert Einstein",
+        "image":"https://rickandmortyapi.com/api/character/avatar/11.jpeg",
+        "gender":"Male",
+        "species":"Human",
+        "status":"Dead"
+    
+    },
+    {
+        "id": 32,
+        "name":"Alexander",
+        "image":"https://rickandmortyapi.com/api/character/avatar/12.jpeg",
+        "gender":"Male",
+        "species":"Human",
+        "status":"Dead"
+    
+    },
+    {
+        "id": 33,
+        "name":"Alien Googah",
+        "image":"https://rickandmortyapi.com/api/character/avatar/13.jpeg",
+        "gender":"unknown",
+        "species":"Alien",
+        "status":"unknown"
+    
+    },
+    {
+        "id": 34,
+        "name":"Alien Morty",
+        "image":"https://rickandmortyapi.com/api/character/avatar/14.jpeg",
+        "gender":"Male",
+        "species":"Alien",
+        "status":"unknown"
+    
+    },
+    {
+        "id": 35,
+        "name":"Alien Rick",
+        "image":"https://rickandmortyapi.com/api/character/avatar/15.jpeg",
+        "gender":"Male",
+        "species":"Alien",
+        "status":"unknown"
+    
+    },
+    {
+        "id": 36,
+        "name":"Amish Cyborg",
+        "image":"https://rickandmortyapi.com/api/character/avatar/16.jpeg",
+        "gender":"Male",
+        "species":"Alien",
+        "status":"Dead"
+    
+    },
+    {
+        "id": 37,
+        "name":"Annie",
+        "image":"https://rickandmortyapi.com/api/character/avatar/17.jpeg",
+        "gender":"Female",
+        "species":"Human",
+        "status":"Alive"
+    
+    },
+    {
+        "id":38,
+        "name":"Antenna Morty",
+        "image":"https://rickandmortyapi.com/api/character/avatar/18.jpeg",
+        "gender":"Male",
+        "species":"Human",
+        "status":"Alive"
+    
+    },
+    {
+        "id": 39,
+        "name":"Antenna Rick",
+        "image":"https://rickandmortyapi.com/api/character/avatar/19.jpeg",
+        "gender":"Male",
+        "species":"Human",
+        "status":"unknown"
+    
+    },
+    {
+        "id": 40,
+        "name":"Ants in my Eyes Johnson",
+        "image":"https://rickandmortyapi.com/api/character/avatar/20.jpeg",
+        "gender":"Male",
+        "species":"Human",
+        "status":"unknown"
+    
+    }
+]
