@@ -1,0 +1,1 @@
+ const cardOcult = document.getElementById("card-oculto")

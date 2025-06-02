@@ -2,7 +2,7 @@
     {
         "id": 21,
         "name":"Rick Sanchez",
-        "image":"https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+        "image":"https://i.postimg.cc/yNMZzZJJ/Rick.jpg",
         "gender":"Male",
         "species":"Human",
         "status":"Alive"
@@ -20,7 +20,7 @@
     {
         "id": 23,
         "name":"Summer Smith",
-        "image":"https://rickandmortyapi.com/api/character/avatar/3.jpeg",
+        "image":"https://i.postimg.cc/qvZKjY4x/d6bbb0e9-d620-4a19-a214-e0ec49cf7bee.jpg",
         "gender":"Female",
         "species":"Human",
         "status":"Alive"

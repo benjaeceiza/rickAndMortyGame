@@ -3,9 +3,8 @@
     background-image: url("https://i.postimg.cc/XNc973GP/descarga.jpg");
     background-size: contain;
     background-position: center;
-    height: 100vh;
     display: flex;
-    
+    align-items: start;
     flex-wrap: wrap;
 }
 

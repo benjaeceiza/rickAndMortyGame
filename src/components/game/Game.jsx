@@ -1,29 +1,34 @@
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import "./game.css"
 import personajes1 from "../../data/personajes.json"
 import personajes2 from "../../data/personajes2.json"
 import Card from "../card/card";
 import ModalWin from "../modal-win/ModalWin";
+import { PointsContext } from "../context/PointsContext";
 
 
 
 
-const Game = ({ isReplay, setIsReplay, setIsPaused, points, setPoints,counterConsecutiveWins,setCounterConsecutiveWins }) => {
+
+const Game = ({ isReplay, setIsReplay, setIsPaused }) => {
 
   const [personajesEnd, SetPersonajesEnd] = useState([])
   const [firtsCardSelected, setFirtsCardSelected] = useState("")
   const [secondCardSelected, setSecondsCardSelected] = useState("")
   const [wins, setWins] = useState([])
   const [isWined, setIsWined] = useState(false)
+  const { sumarPuntos, sumarCounter, reiniciarCounter, counterConsecutiveWins, reiniciarPoints } = useContext(PointsContext)
+
 
 
   useEffect(() => {
-
+     
     const personajesPrev = [...personajes1.slice(0, 9), ...personajes2.slice(0, 9)];
-    SetPersonajesEnd([...personajesPrev].sort((a, b) => Math.floor(Math.random() * (1 - (-1) + 1) + (-1))))
+    SetPersonajesEnd(personajesPrev.sort((a, b) => Math.floor(Math.random() * (10 - (-10) + 10) + (-10))))
+  
 
-  }, [])
+  }, [isReplay])
 
 
   useEffect(() => {
@@ -33,7 +38,8 @@ const Game = ({ isReplay, setIsReplay, setIsPaused, points, setPoints,counterCon
       setWins([])
       setIsPaused(false)
       setIsReplay(false)
-      setPoints(0)
+      reiniciarPoints();
+      reiniciarCounter();
     }
   }, [isReplay])
 
@@ -57,9 +63,11 @@ const Game = ({ isReplay, setIsReplay, setIsPaused, points, setPoints,counterCon
     if (firtsCardSelected) {
       setSecondsCardSelected({ id: id, name: name })
       controlCard(id, name)
+      
     } else {
       setFirtsCardSelected({ id: id, name: name })
-
+     
+      
     }
 
   }
@@ -69,24 +77,27 @@ const Game = ({ isReplay, setIsReplay, setIsPaused, points, setPoints,counterCon
 
 
     if (firtsCardSelected.name === name) {
-      counterConsecutiveWins++
-      console.log("acertaste:", counterConsecutiveWins);
 
       const prevWins = [...wins, firtsCardSelected, { id: id, name: name }]
       setWins(prevWins)
       setFirtsCardSelected("")
       setSecondsCardSelected("")
       isWinner(prevWins)
-      // setPoints(points += (10 * counterConsecutiveWins))
+      sumarCounter()
+      sumarPuntos()
+
+      console.log("acertaste:", counterConsecutiveWins);
+
+
 
     } else {
 
       setTimeout(() => {
         setFirtsCardSelected("")
         setSecondsCardSelected("")
-
       }, 1000)
-      
+      reiniciarCounter()
+
       console.log("fallaste:", counterConsecutiveWins)
     }
   }
@@ -114,7 +125,7 @@ const Game = ({ isReplay, setIsReplay, setIsPaused, points, setPoints,counterCon
               ?
               <Card key={item.id} item={item} />
               :
-              <div key={item.id} className="card-oculto card" onClick={() => onHandlerCardSelected(item.id, item.name)} ></div>
+              <div key={item.id} className={"card-oculto card"} onClick={() => onHandlerCardSelected(item.id, item.name)} ></div>
         ))}
       </div >
     </>

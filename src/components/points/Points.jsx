@@ -1,9 +1,11 @@
 
 import "./points.css"
 import  MenuButton from "../menu/MenuButton"
+import { useContext } from "react"
+import { PointsContext } from "../context/PointsContext"
 
-const Points = ({points,setPoints,setIsPaused}) => {
-
+const Points = ({setIsPaused}) => {
+  const {points} = useContext(PointsContext)
     return (
         <>
             <div className="points-container">
